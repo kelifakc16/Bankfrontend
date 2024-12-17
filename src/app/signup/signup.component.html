@@ -1,0 +1,16 @@
+<div>
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+        <label>Username</label>
+        <input type="text" id="username" formControlName="username" placeholder="Enter your username"/><br/><br/>
+        <label>Password</label>
+        <input type="text" id="password" formControlName="password" placeholder="Enter your password"/><br/><br/>
+
+        <label>AccountHolderName</label>
+        <input type="text" id="accountHolderName" formControlName="accountHolderName" placeholder="Enter your accountHolderName"/><br/><br/>
+    
+        <label>Account ID</label>
+        <input type="text" id="accountid" formControlName="accountid" placeholder="Enter your account ID" ><br/><br/>
+        
+        <button type="submit" routerLink="/login">Sign Up</button>
+    </form>
+</div>
